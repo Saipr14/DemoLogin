@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Sign In</title>
+</head>
+<body>
+<section id="sec" class="rounded-4 pb-5">
+    <div class="container-lg">
+<!-- Navbar start -->
+<nav class="navbar navbar-expand-lg mb-5 pt-4">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light fw-bold" href="#">
+        Template<br>Design<br>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item ms-4">
+            <a class="nav-link text-white fw-bold" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item ms-4">
+            <a class="nav-link text-white fw-bold" href="#">Features</a>
+          </li>
+          <li class="nav-item ms-4">
+            <a class="nav-link text-white fw-bold" href="#">Pricing</a>
+          </li>
+          <li class="nav-item ms-4">
+            <a class="nav-link text-white fw-bold" aria-disabled="true">Disabled</a>
+          </li>
+          <li class="nav-item ms-4 d-none d-md-inline">
+            <button type="button" class="btn btn-primary rounded-pill px-5 fs-6 fw-medium font-monoscope">SIGN IN</button>
+          </li>
+          <li class="nav-item ms-4 d-md-none">
+            <a class="nav-link text-white fw-bold nav-link-sm" aria-disabled="true">SignIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+        
+<!-- Navbar end -->
+        <div class="row justify-content-center ">
+            <div class="col-md-4">
+                <form id="form" class=" py-5">
+                  <div class="position-relative">
+                  <img src="user.png" class="user-img position-relative top-50 start-50 translate-middle" alt="user.png" width="140" height="120">
+                    <div class="my-3">
+                     <input type="text" class="rounded-pill bg-none px-4 py-1 position-relative top-50 start-50 translate-middle" maxlength="50" placeholder="username" id="username" aria-describedby="emailHelp">
+                    </div>
+                    <div class="my-3">
+                      <input type="password" class="rounded-pill bg-none px-4 py-1 position-relative top-50 start-50 translate-middle"  placeholder="password" id="password">
+                    </div>
+                    <button type="submit" class="btn smb-btn rounded-pill mt-4 position-relative top-50 start-50 translate-middle">Submit</button>
+                    <div class="my-4 form-check">
+                      <input type="checkbox" class="form-check-input rounded-4" style="background-color: #eb1dc5;" id="sumbit">
+                      <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                      <a href="" class="small display-9 ms-5 ps-5 fst-italic text-decoration-none text-light">forgot password?</a>
+                    </div>
+                  </div>
+                  </form>
+            </div>
+            <div class="col-md-8 text-end shad d-none d-xl-inline">
+                <img src="bg.png" id="bg-img" alt="wavy.png" width="600" height="325" >
+                <div class="text">
+                <h2 class="fw-bold"  style="font-size: 5rem;">Welcome.</h2><br>
+                <p class=" fw-light lh-0" style="font-size: 0.8rem; position: relative; left: 30%; width: 270px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.Eius provident iusto delectus sequi rerum nisi fuga commodi culpa esse veritatis.</p>
+                 <p class=" lh-0" style="font-size: 0.8rem;">Not a member?<a href="#" class="text-light" style="font-size: 0.8rem;">Sign up Now</a></p>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+
+body{
+    background-color: #6e72fc;
+    background-image:linear-gradient(224deg,#6E72EF,#ad1deb);
+    background-repeat:no-repeat;
+    height: 100vh;
+    width:100%;
+    color: white;
+    font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+#sec{
+    background-color: #271f52;
+    margin: 69px 65px;
+    -webkit-box-shadow:-19px 27px 42px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -19px 27px 42px 7px rgba(0,0,0,0.75);
+    box-shadow: -19px 27px 42px 7px rgba(0,0,0,0.75);
+}
+
+.shad{
+  -webkit-box-shadow: -79px 8px 110px -100px rgba(0, 0, 0, 0.75);
+-moz-box-shadow: -79px 8px 110px -100px rgba(0, 0, 0, 0.75);
+box-shadow: -79px 8px 110px -100px rgba(0, 0, 0, 0.75);
+}
+
+.navbar-toggler-icon{
+  color: white;
+}
+
+#username,#password{
+    background-color: #271f52;
+}
+
+.smb-btn{
+  background-color: #eb1dc5;
+  padding: 5px 93px;
+}
+
+input{
+    border: 2px solid whitesmoke;
+}
+
+#bg-img{
+  transform: rotateX(180deg);
+  position: relative;
+  top: -22%;
+  box-sizing: border-box;
+  min-width: 100%;
+}
+
+.text{
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+}
+
+
+</style>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
